@@ -4,7 +4,7 @@
 using namespace std;
 
 void checkValidInput() {
-    cout << "Error" << endl;
+    if (cin.fail()) { throw "Incorrect input"; }
 }
 
 void check_Valid_Params(double& a, double& b, double& h, double& n) {
